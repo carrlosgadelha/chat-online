@@ -75,7 +75,7 @@ loginForm.addEventListener("submit", function(e){
     login.style.display = "none"
     chat.style.display = "flex"
 
-    ws = new WebSocket("ws://localhost:8080")
+    ws = new WebSocket("wss://chat-online-irfp.onrender.com")
     ws.onmessage = processMessage
 
     chatInput.focus()
